@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@tailwind base;
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+    h2 {
+        @apply text-xl;
+    }
+    h3 {
+        @apply text-lg;
+    }
+    a {
+        @apply text-blue-600 underline;
+    }
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+@theme {
+    --animate-wiggle: wiggle 1s ease-in-out infinite;
+    @keyframes wiggle {
+        0%,
+        100% {
+            transform: rotateX(45deg);
+        }
+        50% {
+            transform: rotateX(-45deg);
+        }
+    }
+}

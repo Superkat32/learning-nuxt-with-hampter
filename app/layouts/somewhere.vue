@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="mx-8">
     <slot />
     <NuxtLink to="/">Take me home, Hampter!</NuxtLink>
   </div>
