@@ -1,6 +1,5 @@
 <template>
   <ImgHampterVisual variant="default"/>
-
   <p>How will Hampter decide your fate today?</p>
   <ul>
     <li><NuxtLink :to="{ name: 'places-happy' }">Take me somewhere happy...</NuxtLink></li>
