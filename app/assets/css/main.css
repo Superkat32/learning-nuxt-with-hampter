@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "@nuxt/ui";
 
 @tailwind base;
 
@@ -20,6 +19,12 @@
 
 @tailwind components;
 
+@layer components {
+    .navbar-link {
+        @apply bg-sky-300 rounded-lg px-0.75 py-0.25 transition delay-15 duration-300 ease-in-out hover:bg-purple-400 hover:rounded-sm
+    }
+}
+
 @tailwind utilities;
 
 @theme {
@@ -31,6 +36,28 @@
         }
         50% {
             transform: rotateX(-45deg);
+        }
+    }
+
+    --animate-shake: shake 0.5s ease-in-out infinite;
+    @keyframes shake {
+        0%,
+        100% {
+            transform: translateY(1px);
+        }
+        50% {
+            transform: translateY(-1px);
+        }
+    }
+
+    --animate-shake-more: shake-more 0.5s ease-in-out infinite;
+    @keyframes shake-more {
+        0%,
+        100% {
+            transform: translateY(3px);
+        }
+        50% {
+            transform: translateY(-3px);
         }
     }
 }
