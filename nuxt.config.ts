@@ -7,4 +7,9 @@ export default defineNuxtConfig({
     app: {
         baseURL: "/learning-nuxt-with-hampter"
     }
+    // vite: {
+    //     plugins: [
+    //         tailwindcss(),
+    //     ]
+    // }
 })
